@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Roboto", sans-serif;
+}
+#img-caption {
+  font-size: 0;
+}
+body {
+  background-color: #434e57;
+  overflow-x: hidden;
+  color: #7c8b91;
+  position: relative;
+}
+/* Title */
+#title h1 {
+  position: absolute;
+  font-size: 4rem;
+  left: 50vw;
+  width: 30vw;
+  transform: translateX(-15vw);
+  text-align: center;
+  top: 50vh;
+  font-family: "Cinzel", serif;
+}
+@media screen and (max-width: 600px) {
+  #title h1 {
+    font-size: 2.3rem;
+    text-align: left;
+  }
+}
+@media screen and (max-height: 750px) {
+  #title h1 {
+    font-size: 2.3rem;
+    top: 3vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: end;
+  }
+}
+/* Image */
+#img-div {
+  z-index: 1;
+  background-color: #434e57;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  display: block;
+  position: relative;
+  min-height: 100vh;
+  object-fit: cover;
+  clip-path: polygon(
+    10% 25%,
+    35% 25%,
+    35% 0%,
+    65% 0%,
+    65% 25%,
+    90% 25%,
+    90% 50%,
+    65% 50%,
+    65% 100%,
+    35% 100%,
+    35% 50%,
+    10% 50%
+  );
+}
+.trans {
+  background-color: #f4e6e3;
+  min-width: 100vw;
+  height: 25%;
+  position: absolute;
+  top: calc(25%);
+  z-index: -1;
+}
+
+#image {
+  max-width: 100%;
+  width: 1px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  display: block;
+  text-align: center;
+  z-index: -1;
+}
+.image-chuck {
+  position: relative;
+  left: -50vw;
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Quote */
+.quote {
+  width: 55vw;
+  float: right;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  left: 40vw;
+}
+.quote p {
+  font-size: 1.4rem;
+  font-family: "Cinzel", serif;
+}
+@media screen and (max-width: 700px) {
+  .quote p {
+    font-size: 0.75rem;
+    margin: 0 0 0 10px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1500px) {
+  .quote p {
+    font-size: 1.2rem;
+    margin: 0 0 0 10px;
+  }
+}
+/* Info Area */
+#tribute-info {
+  position: relative;
+  background: rgb(171, 134, 138);
+  background: linear-gradient(
+    152deg,
+    rgba(171, 134, 138, 1) 0%,
+    rgba(140, 107, 111, 1) 81%,
+    rgba(98, 75, 78, 1) 100%
+  );
+  min-height: 100vh;
+  color: #f4e6e3;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about {
+  margin: 50px 0 0;
+  padding: 150px 30px 30px;
+  width: 50%;
+  position: relative;
+  border: 1px solid #f4e6e3;
+  text-indent: 30px;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.about::before {
+  content: "";
+  background-image: url(https://i.pinimg.com/564x/1f/23/6a/1f236a512ac413035dfca7a9757314fe.jpg);
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
+  background-size: 300px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-100px);
+}
+.early-career,
+.fight-club {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.career div h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+.career div h4,
+.career div p {
+  margin: 15px;
+  width: 50%;
+}
+.career div p {
+  text-indent: 30px;
+  line-height: 1.4rem;
+}
+
+/* Books Area */
+.books {
+  background-color: #7c8b91;
+  width: 100vw;
+  min-height: 100vh;
+  color: #f4e6e3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.books h4 {
+  font-size: 3rem;
+  margin-bottom: 100px;
+}
+
+.books ul {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+/* Footer Area */
+.footer p {
+  text-align: center;
+  margin: 5px;
+}
