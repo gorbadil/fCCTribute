@@ -1,8 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 #img-caption {
   font-size: 0;
@@ -11,18 +12,50 @@ body {
   background-color: #434e57;
   overflow-x: hidden;
   color: #7c8b91;
-  position: relative;
 }
+
+/* Links */
+.links {
+  height: 30px;
+  position: fixed;
+  right: 0;
+  display: inline-flex;
+  overflow: hidden;
+  gap: 1vw;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  mix-blend-mode: difference;
+  border-bottom: 3px solid #444;
+  padding: 0 50px;
+}
+.links a {
+  color: #555;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  position: relative;
+  text-align: center;
+  transition: 300ms;
+  padding: 3px 10px;
+}
+.links a:hover {
+  transform: scale(1.1);
+  color: #ddd;
+}
+
 /* Title */
 #title h1 {
   position: absolute;
+  transform-style: inherit;
   font-size: 4rem;
   left: 50vw;
   width: 30vw;
   transform: translateX(-15vw);
   text-align: center;
-  top: 50vh;
+  top: 80vh;
   font-family: "Cinzel", serif;
+  z-index: 2;
 }
 @media screen and (max-width: 600px) {
   #title h1 {
@@ -82,7 +115,7 @@ img {
 
 #image {
   max-width: 100%;
-  width: 1px;
+  width: 0.01px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -206,6 +239,7 @@ img {
 /* Books Area */
 .books {
   background-color: #7c8b91;
+  position: relative;
   width: 100vw;
   min-height: 100vh;
   color: #f4e6e3;
