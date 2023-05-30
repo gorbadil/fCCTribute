@@ -57,21 +57,14 @@ body {
   font-family: "Cinzel", serif;
   z-index: 2;
 }
-@media screen and (max-width: 960px) {
-  #title h1 {
-    font-size: 2.3rem;
-    text-align: left;
-  }
-}
+
 @media screen and (max-height: 960px) {
   #title h1 {
     font-size: 2.3rem;
-    width: 100vw;
-    top: 50px;
-    left: 25vw;
+    width: 70vw;
+    bottom: 50px;
+    left: 50vw;
     transform: translateX(-50%);
-    display: grid;
-    place-items: end;
   }
 }
 /* Image */
