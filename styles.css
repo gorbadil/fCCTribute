@@ -57,13 +57,13 @@ body {
   font-family: "Cinzel", serif;
   z-index: 2;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
   #title h1 {
     font-size: 2.3rem;
     text-align: left;
   }
 }
-@media screen and (max-height: 750px) {
+@media screen and (max-height: 960px) {
   #title h1 {
     font-size: 2.3rem;
     width: 100vw;
@@ -148,13 +148,13 @@ img {
   font-size: 1.4rem;
   font-family: "Cinzel", serif;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 960px) {
   .quote p {
     font-size: 0.75rem;
     margin: 0 0 0 10px;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 1500px) {
+@media screen and (min-width: 960px) and (max-width: 1500px) {
   .quote p {
     font-size: 1.2rem;
     margin: 0 0 0 10px;
@@ -232,7 +232,7 @@ img {
   width: 50%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
   .about {
     width: 90vw;
     margin-right: 10px;
